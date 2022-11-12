@@ -19,4 +19,4 @@ with app.app_context():
 
 def index():
     person = Person.query.first()
-    return 'Hello ' + person.name 
+    return f'Hello {person.name}'
